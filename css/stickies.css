@@ -1,0 +1,58 @@
+/*
+ * Stickies v.0.1 Stylesheet
+ * Copyright (c) 2014 Vasilij Olhov
+ * Dual licensed under the MIT and GPL licenses
+ */
+
+div.stickies-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:300;
+    width: 180px;
+    height: 180px;
+    background-image: url('background.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+div.stickies-container textarea {
+    color: #0000AE;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 14px;
+    border: medium none;
+    margin: 30px 0 0 18px;
+    width:148px;
+    height:136px;
+    overflow: hidden !important;
+    resize:none;
+    background: none repeat scroll 0 0 transparent;
+    outline: none;
+}
+
+div.stickies-creation-panel {
+	display:none;
+	position:fixed;
+	top:0;
+	right:0;
+	height:100%;
+}
+
+div.stickies-creation-panel div.x-create { 	width:32px;
+ 	height:32px;
+ 	margin:2px;
+	background-image: url('create.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor:pointer;}
+
+div.stickies-container div.stickies-remove-icon {	display:none;
+	position:absolute;
+	top:3px;
+	right:3px;
+	width:16px; height:16px;
+	cursor:pointer;
+	background-image: url('remove.png');
+    background-position: top left;
+    background-repeat: no-repeat;}
